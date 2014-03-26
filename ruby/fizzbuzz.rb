@@ -5,17 +5,22 @@ class FizzBuzz
   end
 
   def process
-    return Range.new(@min, @max).map do | number |
-      case
-      when number % 15 == 0
-        'Fizz Buzz'
-      when number % 3 == 0
-        'Fizz'
-      when number % 5 == 0
-        'Buzz'
-      else
-        number
-      end
+    Range.new(@min, @max).map do |number|
+      say number
     end
-  end 
+  end
+
+  private
+  def say(x)
+    case
+    when x % 15 == 0
+      'Fizz Buzz'
+    when x % 3 == 0
+      'Fizz'
+    when x % 5 == 0
+      'Buzz'
+    else
+      x
+    end
+  end
 end

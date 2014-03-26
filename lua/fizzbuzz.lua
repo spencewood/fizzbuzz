@@ -1,14 +1,14 @@
 local fizzBuzz = {}
 
-local function say (num)
-  if num % 15 == 0 then 
+local function say (x)
+  if x % 15 == 0 then 
     return "FizzBuzz"
-  elseif num % 3 == 0 then
+  elseif x % 3 == 0 then
     return "Fizz"
-  elseif num % 5 == 0 then
+  elseif x % 5 == 0 then
     return "Buzz"
   else
-    return num
+    return x
   end
 end
 
