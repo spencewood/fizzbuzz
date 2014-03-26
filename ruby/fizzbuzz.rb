@@ -1,5 +1,5 @@
 class FizzBuzz
-  def initialize(min, max)
+  def initialize(min = 1, max = 100)
     @min = min
     @max = max
   end
