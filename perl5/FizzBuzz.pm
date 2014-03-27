@@ -16,10 +16,10 @@ sub new{
 
 sub process{
   my ($self) = @_;
-  return map { $self->sayer($_); } $self->{_min}..$self->{_max}
+  return map { $self->say($_); } $self->{_min}..$self->{_max}
 }
 
-sub sayer{
+sub say{
   my ($self, $x) = @_;
   given($x){
     when($_ % 15 == 0){
