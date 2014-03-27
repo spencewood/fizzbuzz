@@ -1,6 +1,3 @@
-Option Explicit On
-Option Strict On
-
 Imports System
 Imports System.Linq
 Imports System.Collections.Generic
@@ -16,7 +13,8 @@ Public Class FizzBuzz
 	End Sub
 	
 	Public Function Process() As IEnumerable(Of String)
-		'Dim x = Enumerable.Range(_min, _max).Select(Function(x) x)
+        Return Enumerable.Range(_min, _max) _
+                .Select(Function(x) Say(x))
 	End Function
 	
 	Private Function Say(ByVal x As Integer) As String

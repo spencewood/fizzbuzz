@@ -1,8 +1,11 @@
+Option Strict Off
 
+Imports System
 
 Public Class Application
 	Public Shared Sub Main()
-		System.Console.WriteLine("Hello world!")
+        Dim fb As FizzBuzz = New FizzBuzz()
+        Console.WriteLine(String.Join(",", fb.Process()))
 	End Sub
 End Class
 

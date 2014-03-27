@@ -15,13 +15,13 @@ namespace FizzBuzz
             _max = max;
         }
 
-        public IEnumerable<string> process()
+        public IEnumerable<string> Process()
         {
             return Enumerable.Range(_min, _max)
-                .Select(x => say(x)).AsEnumerable();
+                .Select(x => Say(x)).AsEnumerable();
         }
 
-        private string say(int x)
+        private string Say(int x)
         {
             if (x % 15 == 0)
             {
