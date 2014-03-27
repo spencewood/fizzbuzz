@@ -24,6 +24,7 @@ Here are some additional rules I came up with:
 2. It should have default values of 1 for the minimum and 100 for the maximum for the range of values. The code should be able to be run without specifying any numbers, but should have the ability to run any range.
 3. No external libraries. Just core language features.
 4. It should be relatively succinct without sacrificing readability.
+5. It should print a new line at the very end of the list.
 
 ### Additional
 
@@ -32,6 +33,7 @@ Some things to see from this are how each language handles the following feature
 * Modules
 * Iteration
 * Case statements
-* Private methods (if available)
-* Default values for arguments (if available)
-* Range generation (if available)
+* Private methods (if applicable)
+* Instance variables (if applicable)
+* Default values for arguments (if applicable)
+* Range generation (if applicable)
