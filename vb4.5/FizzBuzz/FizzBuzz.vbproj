@@ -40,8 +40,5 @@
     <Compile Include="AssemblyInfo.vb" />
     <Compile Include="FizzBuzz.vb" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
 </Project>
