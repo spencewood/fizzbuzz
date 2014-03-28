@@ -15,7 +15,7 @@ namespace FizzBuzz
             _max = max;
         }
 
-        public IEnumerable<string> Process()
+        public IEnumerable<string> Generate()
         {
             return Enumerable.Range(_min, _max)
                 .Select(x => Say(x)).AsEnumerable();

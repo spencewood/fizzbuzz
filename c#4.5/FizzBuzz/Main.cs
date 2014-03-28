@@ -7,7 +7,7 @@ namespace FizzBuzz
         public static void Main(string[] args)
         {
             var fb = new FizzBuzz();
-            Console.WriteLine(string.Join(",", fb.Process()));
+            Console.WriteLine(string.Join(",", fb.Generate()));
         }
     }
 }
