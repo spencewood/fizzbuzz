@@ -12,7 +12,7 @@ local function say (x)
   end
 end
 
-function fizzBuzz.process (min, max)
+function fizzBuzz.generate (min, max)
   min = min or 1
   max = max or 100
   arr = {}
