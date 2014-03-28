@@ -12,10 +12,10 @@ Public Class FizzBuzz
 		_max = max
 	End Sub
 	
-	Public Function Process() As IEnumerable(Of String)
+    Public Function Generate() As IEnumerable(Of String)
         Return Enumerable.Range(_min, _max) _
                 .Select(Function(x) Say(x))
-	End Function
+    End Function
 	
 	Private Function Say(ByVal x As Integer) As String
 		If x mod 15 = 0 Then
