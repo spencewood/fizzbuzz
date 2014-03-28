@@ -8,5 +8,5 @@ import (
 
 func main(){
   var fb = fizzbuzz.NewFizzBuzzNoParams()
-  fmt.Println(strings.Join(fb.Process(), ","))
+  fmt.Println(strings.Join(fb.Generate(), ","))
 }

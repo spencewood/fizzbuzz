@@ -16,10 +16,10 @@ func NewFizzBuzz(min int, max int) *FizzBuzz {
 //because there isn't a sensible way to deal with
 //overloading or default parameters
 func NewFizzBuzzNoParams() *FizzBuzz {
-  return &FizzBuzz{1, 100}
+  return NewFizzBuzz(1, 100)
 }
 
-func (fb FizzBuzz) Process() (l []string) {
+func (fb FizzBuzz) Generate() (l []string) {
   for i := 1; i < fb.max + 1; i++ {
     l = append(l, say(i))
   }
