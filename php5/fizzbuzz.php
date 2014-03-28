@@ -5,7 +5,7 @@ class FizzBuzz{
     $this->max = $max;
   }
 
-  function process(){
+  function generate(){
     return array_map(array($this, "say"), range($this->min, $this->max));
   }
 
