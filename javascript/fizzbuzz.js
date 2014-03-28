@@ -4,7 +4,7 @@ var generate = function(min, max){
   max = max == void null ? 100 : max;
   for(; min <= max; min++){
     fb = say(min);
-    arr.push(fb.length === 0 ? min : fb.join(' '));
+    arr.push(fb.length === 0 ? min : fb.join(''));
   }
   return arr;
 };
