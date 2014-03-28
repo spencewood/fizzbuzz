@@ -1,4 +1,4 @@
-var fizzBuzz = function(min, max){
+var generate = function(min, max){
   var fb = [], arr = [];
   min = min == void null ? 1 : min;
   max = max == void null ? 100 : max;
@@ -20,4 +20,6 @@ var say = function(x){
   return fb;
 };
 
-module.exports = fizzBuzz;
+module.exports = {
+  generate: generate
+};
