@@ -14,7 +14,7 @@ sub new{
   return bless $self, $class;
 }
 
-sub process{
+sub generate{
   my ($self) = @_;
   return map { $self->say($_); } $self->{_min}..$self->{_max}
 }

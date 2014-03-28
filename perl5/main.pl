@@ -4,4 +4,4 @@ use warnings;
 use FizzBuzz;
 
 my $fb = FizzBuzz->new();
-print join ',', $fb->process();
+print join(',', $fb->generate()) . "\n";
