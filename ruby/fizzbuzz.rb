@@ -4,7 +4,7 @@ class FizzBuzz
     @max = max
   end
 
-  def process
+  def generate
     Range.new(@min, @max).map do |number|
       say number
     end
@@ -14,7 +14,7 @@ class FizzBuzz
   def say(x)
     case
     when x % 15 == 0
-      'Fizz Buzz'
+      'FizzBuzz'
     when x % 3 == 0
       'Fizz'
     when x % 5 == 0
