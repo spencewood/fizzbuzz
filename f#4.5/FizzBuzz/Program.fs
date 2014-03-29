@@ -2,5 +2,5 @@
 
 [<EntryPoint>]
 let main argv = 
-    System.Console.WriteLine (FizzBuzz.Generate() |> String.concat ",")
+    System.Console.WriteLine (FizzBuzz.Generate () |> String.concat ",")
     0
