@@ -1,10 +1,10 @@
 var generate = function(min, max){
-  var fb = [], arr = [];
+  var fb = [], arr = [], i;
   min = min == void null ? 1 : min;
   max = max == void null ? 100 : max;
-  for(; min <= max; min++){
-    fb = say(min);
-    arr.push(fb.length === 0 ? min : fb.join(''));
+  for(i = min; i <= max; i++){
+    fb = say(i);
+    arr.push(fb.length === 0 ? i : fb);
   }
   return arr;
 };
@@ -17,7 +17,7 @@ var say = function(x){
   if(x % 5 === 0){
     fb.push('Buzz');
   }
-  return fb;
+  return fb.join('');
 };
 
 module.exports = {
