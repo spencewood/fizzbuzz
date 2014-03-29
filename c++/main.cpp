@@ -12,7 +12,6 @@ string comp(){
   return ss.str();
 }
 
-int main()
-{
+int main(){
   cout << comp() << "\n";
 }
