@@ -16,7 +16,7 @@ char **generate(int min, int max){
   int j = 0;
   char ** sub_str = malloc(max * sizeof(char*));
   for (; i <= max; i++, j++){
-    sub_str[j] = malloc(8 * sizeof(char));
+    sub_str[j] = malloc(9 * sizeof(char));
     say(sub_str[j], i);
   }
   

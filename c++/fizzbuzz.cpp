@@ -6,15 +6,12 @@ FizzBuzz::FizzBuzz(int min, int max){
 }
 
 string FizzBuzz::say(int x){
-  if(x % 15 == 0){
+  if(x % 15 == 0)
     return "FizzBuzz";
-  }
-  else if(x % 3 == 0){
+  else if(x % 3 == 0)
     return "Fizz";
-  }
-  else if(x % 5 == 0){
+  else if(x % 5 == 0)
     return "Buzz";
-  }
   else{
     ostringstream convert;
     convert << x;
@@ -24,8 +21,8 @@ string FizzBuzz::say(int x){
 
 vector<string> FizzBuzz::generate(){
   vector<string> list;
-  for(int i = _min; i <= _max; i++){
+  for(int i = _min; i <= _max; i++)
     list.push_back(say(i));
-  }
+
   return list;
 }
