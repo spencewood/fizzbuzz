@@ -11,6 +11,10 @@ void say(char* str, int x){
     sprintf(str, "%d", x);
 };
 
+char **generateNoParams(){
+  generate(1, 100);
+}
+
 char **generate(int min, int max){
   int i = min;
   int j = 0;

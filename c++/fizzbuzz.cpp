@@ -1,5 +1,10 @@
 #include "fizzbuzz.h"
 
+FizzBuzz::FizzBuzz(){
+  _min = 1;
+  _max = 100;
+}
+
 FizzBuzz::FizzBuzz(int min, int max){
   _min = min;
   _max = max;
