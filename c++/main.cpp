@@ -1,7 +1,7 @@
 #include "fizzbuzz.h"
 
 string comp(){
-  FizzBuzz f(1, 100);
+  FizzBuzz f = FizzBuzz();
   const vector<string> &r = f.generate();
   stringstream ss;
 
